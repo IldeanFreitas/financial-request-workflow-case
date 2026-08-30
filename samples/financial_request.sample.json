@@ -1,0 +1,33 @@
+{
+  "request_id": "FR-000184",
+  "idempotency_key": "fr-000184-20260830",
+  "request_type": "supplier_invoice",
+  "status": "submitted",
+  "currency": "BRL",
+  "total_amount": 1250.0,
+  "requester": {
+    "role": "requester",
+    "reference": "synthetic-user-01"
+  },
+  "allocations": [
+    {
+      "cost_center": "CC-OPS01",
+      "ledger_account": "610010",
+      "amount": 750.0,
+      "description": "synthetic operational allocation"
+    },
+    {
+      "cost_center": "CC-OPS02",
+      "ledger_account": "610010",
+      "amount": 500.0,
+      "description": "synthetic support allocation"
+    }
+  ],
+  "evidences": [
+    {
+      "kind": "invoice",
+      "file_name": "synthetic-invoice.pdf",
+      "content_type": "application/pdf"
+    }
+  ]
+}
